@@ -249,10 +249,10 @@ body {
 .sobre-mi__container__title-container__title {
   font-size: 48px;
   color: var(--celesteClaro);
-  font-weight: bold;
+  font-weight: 600;
+  font-style: italic;
   text-align: center;
   padding: 0;
-  text-decoration: underline;
 }
 
 .sobre-mi__container__info-container {
@@ -330,14 +330,45 @@ body {
   margin-top: 20px;
 }
 
-.skills__container__carrucel {
+.skills__container__flechitas-skills {
+  height: 95vh;
   width: 100%;
-  height: 700px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  background-color: var(--celesteClaro);
+  justify-content: space-between;
+}
+
+.skills__container__anterior-skills {
+  height: 40px;
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+
+.skills__container__siguiente-skills {
+  height: 40px;
+  padding-right: 20px;
+}
+
+.skills__container__carrucel {
+  overflow: hidden;
+  height: 100%;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.skills__container__two-cards {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .card-skill {
@@ -405,18 +436,42 @@ body {
   font-weight: bold;
   margin: 0;
   margin-top: 10px;
-  margin-bottom: 10px;
   text-align: center;
 }
 
+.projects__container__flechitas-carrusell {
+  height: 92vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects__container__anterior {
+  height: 40px;
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+
+.projects__container__siguiente {
+  height: 40px;
+  padding-right: 20px;
+}
+
 .projects__container__carrucel-container {
+  overflow: hidden;
   height: 80%;
   width: 85%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
-  margin: auto;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
+  box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
 }
 
 .card-project__container {
@@ -428,9 +483,7 @@ body {
   justify-content: center;
   background-color: var(--gris);
   border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
-  -moz-box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
-  box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
+  transition-delay: all 0.3s;
 }
 
 .card-project__container__img-link-container {
