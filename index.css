@@ -232,12 +232,13 @@ body {
 .hero-container__video {
   height: 440px;
   width: 720px;
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) {
   .hero-container__video {
-    width: 90vw;
-    height: 40vh;
+    width: 100vw;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -462,12 +463,12 @@ body {
 .skills__container__anterior-skills {
   height: 40px;
   transform: rotate(180deg);
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .skills__container__siguiente-skills {
   height: 40px;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .skills__container__carrucel {
@@ -492,7 +493,7 @@ body {
 }
 
 .card-skill {
-  width: 450px;
+  width: 400px;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -506,8 +507,8 @@ body {
 }
 
 .card-skill__img {
-  width: 300px;
-  height: 260px;
+  width: 200px;
+  height: 200px;
   margin-top: 20px;
 }
 
@@ -691,6 +692,7 @@ body {
   height: 40px;
   transform: rotate(180deg);
   margin-left: 20px;
+  margin-right: 40px;
 }
 @media (max-width: 768px) {
   .projects__container__anterior {
@@ -704,6 +706,7 @@ body {
 .projects__container__siguiente {
   height: 40px;
   margin-right: 20px;
+  margin-left: 40px;
 }
 
 @media (max-width: 768px) {
@@ -783,7 +786,7 @@ body {
   .card-project__container__img-link-container__img {
     height: 85%;
     border-radius: 15px;
-    margin: 10px 0px 10px 0px;
+    margin: 20px 0px 10px 0px;
     width: 90%;
   }
 }
@@ -1013,8 +1016,9 @@ body {
 @media (min-width: 769px) {
   .footer {
     display: flex;
+    height: 400px;
     flex-direction: row;
-    align-content: space-between;
+    align-content: center;
     align-items: center;
     justify-content: space-between;
     min-height: 350px;
@@ -1041,7 +1045,6 @@ body {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  margin-top: 100px;
 }
 
 @media (min-width: 769px) {
@@ -1049,6 +1052,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     width: 300px;
     margin-right: 40px;
